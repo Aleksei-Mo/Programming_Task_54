@@ -1,7 +1,7 @@
 ﻿// Task 54. Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию 
 //элементы каждой строки двумерного массива.
 Console.Clear();
-Console.WriteLine("");
+Console.WriteLine("This program sorts rows of the entered array.");
 int numberRow = EnterUserData("Enter number of rows:");
 int numberCol = EnterUserData("Enter number of columns:");
 int lowerLim = EnterUserData("Enter lower limit for random range:");
