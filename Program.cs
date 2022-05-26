@@ -36,16 +36,17 @@ void SortArray()
     }
 }
 
-void FillArray(double[,] array, int numberRow, int numberCol, int lowerLim, int upperLim, int precision)
+double[,] FillArray(double[,] array, int numberRow, int numberCol, int lowerLim, int upperLim, int precision)
 {
-    for (int i = 0; i < randomArray.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < randomArray.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             double randomNum = new Random().NextDouble() * (upperLim - lowerLim);
             randomArray[i, j] = Math.Round(randomNum, precision);
         }
     }
+    return array;
 }
 
 void PrintArray(double[,] array)
